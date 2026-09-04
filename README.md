@@ -4,25 +4,26 @@ Esta implementacao sera feita em partes, registrando erros e correcoes no arquiv
 
 ## Parte 1 - Leitura inicial do arquivo
 
-Nesta primeira parte o programa:
+Nesta versao o programa ja:
 
-- o algoritmo informado;
+- valida se o algoritmo e `rate` ou `edf`;
 - abre o arquivo de entrada;
 - le o tempo total da simulacao;
 - le as tarefas no formato `NOME PERIODO DEADLINE BURST`;
-- mostra as tarefas lidas no terminal.
+- cria uma saida provisoria no formato `rate_dab.out` ou `edf_dab.out`;
+- prepara contadores de tarefas completas, perdidas e mortas.
 
 ## Erros deixados de proposito
 
 Estes erros existem para serem executados, registrados no `evidencias.log` e corrigidos nas proximas etapas:
 
-- o programa imprime na saida padrao;
-- mensagens de erro ainda usam `printf`, nao `stderr`;
-- ainda nao valida se o primeiro argumento e somente `rate` ou `edf`;
+- o conteudo do `.out` ainda nao e a simulacao real;
+- os contadores ainda ficam zerados, porque o escalonamento ainda nao foi implementado;
 - ainda nao valida arquivo malformado corretamente;
 - ainda nao valida valores negativos, zero ou texto em lugar de numero;
 - ainda nao valida as regras `C <= D <= P`;
-- o programa ainda nao cria o arquivo `.out`.
+- ainda nao implementa `rate`;
+- ainda nao implementa `edf`.
 
 ## Como registrar evidencia
 
@@ -35,7 +36,8 @@ make
 ./scheduler
 ./scheduler rate voo.txt
 ./scheduler fifo voo.txt
+cat rate_dab.out
 exit
 ```
 
-O comando `./scheduler fifo voo.txt` deve mostrar que o algoritmo invalido ainda nao esta sendo tratado como erro real. Depois vamos corrigir isso.
+O comando `./scheduler fifo voo.txt` deve mostrar a primeira correcao: agora algoritmo invalido vira erro. O arquivo `rate_dab.out` ainda esta propositalmente incompleto, pois mostra apenas a leitura e contadores zerados.

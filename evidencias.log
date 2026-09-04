@@ -19,3 +19,59 @@ Erro ao abrir arquivo de entrada.
 [?2004lexit
 
 Script done on 2026-09-03 17:03:00-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-09-04 08:29:18-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="152" LINES="10"]
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mset -x[27mset -x
+[?2004l[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mdate[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate
+[A
+[?2004l+ date
+Fri Sep  4 08:29:28 -03 2026
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mwhoami[27mwhoami
+[?2004l+ whoami
+davia
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ pwd
+[?2004l+ pwd
+/mnt/c/Users/davia/Desktop/implementacao3
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mmake clean[27mmake clean
+[?2004l+ make clean
+rm -f scheduler scheduler.exe *.out
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mmake[27mmake
+[?2004l+ make
+gcc -Wall -Wextra -g scheduler.c -o scheduler
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7m./scheduler rate voo.txt[27m./scheduler rate voo.txt
+[?2004l+ ./scheduler rate voo.txt
+Erro ao abrir arquivo de entrada.
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mecho $?[27mecho $?
+[?2004l+ echo 1
+1
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mcat rate.out[27mcat rate.out
+[?2004l+ cat rate.out
+cat: rate.out: No such file or directory
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7m./scheduler fifo voo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler fifo voo.txt
+[A
+[?2004l+ ./scheduler fifo voo.txt
+Erro: algoritmo invalido. Use rate ou edf.
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mecho $?[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $?
+[A
+[?2004l+ echo 1
+1
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7m./scheduler[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler
+[A
+[?2004l+ ./scheduler
+Uso: ./scheduler rate|edf arquivo.txt
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mecho $?[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $?
+[A
+[?2004l+ echo 1
+1
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mset +x[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cset +x
+[A
+[?2004l+ set +x
+[?2004h]0;davia@DELLDAVIARRUDA: /mnt/c/Users/davia/Desktop/implementacao3[01;32mdavia@DELLDAVIARRUDA[00m:[01;34m/mnt/c/Users/davia/Desktop/implementacao3[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-09-04 08:30:47-03:00 [COMMAND_EXIT_CODE="0"]
